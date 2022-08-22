@@ -254,6 +254,16 @@
                     <tabBarItem key="tabBarItem" title="Sedimentation" image="arrow.down.circle.fill" catalog="system" id="drb-IC-OjF">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="dynamicViscosityTextField" destination="7ov-Be-3vZ" id="0Cg-wk-hFU"/>
+                        <outlet property="fluidDensityTextField" destination="exG-c8-MJb" id="jiz-gZ-d74"/>
+                        <outlet property="freeFallCoeficientLabel" destination="ID7-nc-SF3" id="5rZ-Jg-RNp"/>
+                        <outlet property="lawTypeLabel" destination="I8D-Ez-U5w" id="8w7-1o-khS"/>
+                        <outlet property="reynoldsLabel" destination="bcS-BV-uCY" id="8eV-m0-B9J"/>
+                        <outlet property="solidDensityTextField" destination="Y3A-pu-2IP" id="UWl-Ro-Kyi"/>
+                        <outlet property="solidDiameterTextField" destination="tCX-bd-vkU" id="yvb-FB-P7i"/>
+                        <outlet property="terminalVelocityLabel" destination="VI7-YB-uQY" id="RZj-W9-vBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,6 +363,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lbk-hA-aQi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lGN-u5-Sxh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
