@@ -1,0 +1,6 @@
+framework module Pods_chemistryAppTests {
+  umbrella header "Pods-chemistryAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
