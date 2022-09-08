@@ -18,9 +18,5 @@ target 'chemistryApp' do
     # Pods for testing
   end
 	
-  pod 'Alamofire'
-  pod 'Kingfisher', '~> 7.0'
-  pod 'FirebaseAuth'
-  pod 'GoogleSignIn'
 
 end

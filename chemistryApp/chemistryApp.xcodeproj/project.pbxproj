@@ -22,6 +22,7 @@
 		6E5A7F5028AFA870002EA782 /* ConvertSedimentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A7F4F28AFA870002EA782 /* ConvertSedimentationViewController.swift */; };
 		6EA9020528CA786C00663575 /* sedimentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA9020428CA786B00663575 /* sedimentationModel.swift */; };
 		6EA9020728CA78A100663575 /* SedimentationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA9020628CA78A100663575 /* SedimentationViewModel.swift */; };
+		6EA9020D28CAA56A00663575 /* intermediateLawSedimentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA9020C28CAA56A00663575 /* intermediateLawSedimentation.swift */; };
 		C3D3725285750D43C93DBDFF /* Pods_chemistryApp_chemistryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D76B32ECB31EE25ED6B0118 /* Pods_chemistryApp_chemistryAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		6E5A7F4F28AFA870002EA782 /* ConvertSedimentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertSedimentationViewController.swift; sourceTree = "<group>"; };
 		6EA9020428CA786B00663575 /* sedimentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sedimentationModel.swift; sourceTree = "<group>"; };
 		6EA9020628CA78A100663575 /* SedimentationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SedimentationViewModel.swift; sourceTree = "<group>"; };
+		6EA9020C28CAA56A00663575 /* intermediateLawSedimentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intermediateLawSedimentation.swift; sourceTree = "<group>"; };
 		AA6D73FC4E1677A84ECD3B5D /* Pods_chemistryAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chemistryAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0607D4E90264E5536DC7CB9 /* Pods-chemistryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chemistryApp.debug.xcconfig"; path = "Target Support Files/Pods-chemistryApp/Pods-chemistryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E382456ABEF7DCFF084AE297 /* Pods-chemistryAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chemistryAppTests.release.xcconfig"; path = "Target Support Files/Pods-chemistryAppTests/Pods-chemistryAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				6E5A7F4F28AFA870002EA782 /* ConvertSedimentationViewController.swift */,
 				6EA9020428CA786B00663575 /* sedimentationModel.swift */,
 				6EA9020628CA78A100663575 /* SedimentationViewModel.swift */,
+				6EA9020C28CAA56A00663575 /* intermediateLawSedimentation.swift */,
 			);
 			path = chemistryApp;
 			sourceTree = "<group>";
@@ -198,7 +201,6 @@
 				6E5A7F1328AEF79C002EA782 /* Sources */,
 				6E5A7F1428AEF79C002EA782 /* Frameworks */,
 				6E5A7F1528AEF79C002EA782 /* Resources */,
-				F38162F01DF6AC48573294B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +238,6 @@
 				6E5A7F3628AEF7A7002EA782 /* Sources */,
 				6E5A7F3728AEF7A7002EA782 /* Frameworks */,
 				6E5A7F3828AEF7A7002EA782 /* Resources */,
-				2CF3347CC9815B96CDAC3CA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,23 +342,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2CF3347CC9815B96CDAC3CA1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-chemistryApp-chemistryAppUITests/Pods-chemistryApp-chemistryAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-chemistryApp-chemistryAppUITests/Pods-chemistryApp-chemistryAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chemistryApp-chemistryAppUITests/Pods-chemistryApp-chemistryAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4D1A383AD4DB17F50F2BD0E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,23 +386,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F38162F01DF6AC48573294B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-chemistryApp/Pods-chemistryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-chemistryApp/Pods-chemistryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chemistryApp/Pods-chemistryApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -426,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EA9020D28CAA56A00663575 /* intermediateLawSedimentation.swift in Sources */,
 				6EA9020528CA786C00663575 /* sedimentationModel.swift in Sources */,
 				6E5A7F1B28AEF79C002EA782 /* AppDelegate.swift in Sources */,
 				6E5A7F4E28AEF9C0002EA782 /* SedimentationViewController.swift in Sources */,
