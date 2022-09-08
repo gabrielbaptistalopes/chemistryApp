@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct particleInitialValues: Codable {
+struct particleInitialValues {
     let solidDensity: Double
     let fluidDensity: Double
     let dynamicViscosity: Double
