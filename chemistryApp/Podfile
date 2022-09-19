@@ -18,5 +18,7 @@ target 'chemistryApp' do
     # Pods for testing
   end
 	
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 
 end
