@@ -196,7 +196,7 @@
             <objects>
                 <viewController id="yXJ-u1-zRy" customClass="ConvertSedimentationViewController" customModule="chemistryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oVb-v1-Va6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pdn-Yy-vAn">
@@ -302,6 +302,17 @@
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jJN-kt-AEG"/>
+                    <connections>
+                        <outlet property="convertedDiameterLabel" destination="8WC-Q8-zcp" id="zRE-nR-Jwf"/>
+                        <outlet property="convertedValueDensityLabel" destination="xgd-Kr-vIi" id="QCR-du-0pa"/>
+                        <outlet property="convertedValueViscosityLabel" destination="f5k-t6-MQF" id="ZBV-w7-meO"/>
+                        <outlet property="densityConverterUIButton" destination="io5-ux-xsO" id="OF6-Cc-KhB"/>
+                        <outlet property="densityToConvert" destination="Ygw-XP-2xd" id="SWN-lP-PJ4"/>
+                        <outlet property="diameterConverterUIButton" destination="Iht-Ai-sTe" id="45T-B3-wIw"/>
+                        <outlet property="diameterToConvert" destination="PTb-LW-1EM" id="IFz-Dh-eCs"/>
+                        <outlet property="dynamicViscosityConverterUIButton" destination="pHZ-T1-mWo" id="nxo-Bl-IJR"/>
+                        <outlet property="dynamicViscosityToConvert" destination="tZ6-05-f5V" id="ow4-fI-kvS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byZ-6l-YpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -327,9 +338,12 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Continue com o Google">
+                                <buttonConfiguration key="configuration" style="plain" title="Entrar no app">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Lbk-hA-aQi" kind="show" id="fPM-n7-oli"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U9Z-WM-z7G"/>
@@ -354,6 +368,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lbk-hA-aQi" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zmN-wh-emt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lGN-u5-Sxh">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
